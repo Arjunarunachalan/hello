@@ -1,0 +1,17 @@
+[33mcommit 13e7b694679bbeb21ebdb0c9bf90f8d699239b7d[m[33m ([m[1;36mHEAD -> [m[1;32mfeature[m[33m)[m
+Author: sreejith <sreejith001v@gmail.com>
+Date:   Sat Dec 17 14:25:27 2022 +0530
+
+    nothing important
+
+[33mcommit 6cc137b97049be2f2e3abcd21938403e5aafe7bb[m
+Author: sreejith <sreejith001v@gmail.com>
+Date:   Sat Dec 17 13:12:41 2022 +0530
+
+    completed the component section
+
+[33mcommit 4bf4e2fe1cdf8ff05b1b006799e2f6a40fa874ed[m[33m ([m[1;32mmaster[m[33m)[m
+Author: sreejith <sreejith001v@gmail.com>
+Date:   Sat Dec 17 10:00:35 2022 +0530
+
+    Initialize project using Create React App

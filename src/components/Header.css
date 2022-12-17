@@ -1,0 +1,21 @@
+.header-title{
+    font-weight: bold;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: yellowgreen;
+    font-size: 2rem;
+    vertical-align:middle;
+    padding-top: 50px;
+}
+.app-header{
+    background-color: black;
+    height: 4rem;
+}
+.item{
+    color:yellow;
+    margin: 3rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px rgb(198, 207, 183);
+}
