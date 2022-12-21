@@ -43,7 +43,7 @@ class List extends React.Component{
         });
 
         console.log(Newlist);
-       const  Arr = Newlist;
+       
        
 
 
