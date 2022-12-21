@@ -3,7 +3,7 @@ import Tools from '../components/Tools';
 import ListItem from './ListItem';
 
 
-const Arr = [
+let Arr = [
     {
         title:"Appointmen for october",
         descr:"appointment was resheduled",
@@ -25,6 +25,19 @@ const Arr = [
 ]
 class List extends React.Component{
 
+constructor(props){
+    super(props);
+
+    this.state = {
+        data:Arr
+    };
+}
+
+
+
+
+
+
     OnActionchange(e){
         console.log(e.target.value);
         const value = e.target.value;
@@ -42,20 +55,21 @@ class List extends React.Component{
             return false;
         });
 
-        console.log(Newlist);
-       
-       
+        this.setState({
+            data:Newlist
+        })
 
-
+       
     }
     
 
     render(){
+        console.log("rendered");
      return (
-        <Tools onAction = {this.OnActionchange}>
+        <Tools onAction = {this.OnActionchange.bind(this)}>
         <div className='app-list'>
             {
-                Arr.map((obj)=>{
+            this.state.data.map((obj)=>{
                     return <ListItem  key= {obj.title} title = {obj.title} descr = {obj.descr} isActive = {obj.isActive} />
                 })
             }
