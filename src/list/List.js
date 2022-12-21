@@ -1,4 +1,5 @@
 import React from 'react'
+import Tools from '../components/Tools';
 import ListItem from './ListItem';
 
 
@@ -23,10 +24,35 @@ const Arr = [
     }
 ]
 class List extends React.Component{
+
+    OnActionchange(e){
+        console.log(e.target.value);
+        const value = e.target.value;
+        const Newlist = Arr.filter((item)=>{
+            if(value=="all"){
+                return true
+            }
+
+            if(value == "active"){
+                return item.isActive== true;
+            }
+            if(value == "non-active"){
+                return item.isActive== false;
+            }
+            return false;
+        });
+
+        console.log(Newlist);
+       const  Arr = Newlist;
+       
+
+
+    }
     
 
     render(){
      return (
+        <Tools onAction = {this.OnActionchange}>
         <div className='app-list'>
             {
                 Arr.map((obj)=>{
@@ -38,6 +64,7 @@ class List extends React.Component{
        
 
         </div>
+        </Tools>
       );
     }
 }

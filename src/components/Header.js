@@ -6,7 +6,7 @@ const Header = () => {
 
     
  <div className="app-header">
-      <span className="header-title">Code Malayalam</span>
+      <span className="header-title"> ARJUN</span>
       <span className='item'>Home</span>
       <span className='item'>Usage</span>
       <span className='item'>Settings</span>

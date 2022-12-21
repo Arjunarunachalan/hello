@@ -27,5 +27,12 @@ root.render(
     </div>
     <hr />
     <Footer />
+
+
+
+
+
+
+
   </div>
 );
